@@ -16,24 +16,24 @@ const travelCaption = document.querySelector(".travel-caption");
 let currImg = 0;
 const imgData = [
   {
-    source: "./imgs/mountain-11.jpg",
-    captionHeading: "Beautiful mountain",
-    subCaption: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta ipsum consectetur! Eaque itaque odio ex enim minima accusantium dolorem magnam."
+    source: "./imgs/annapurna.jpg",
+    captionHeading: "Annapurna Base Camp",
+    subCaption: "Annapurna is a mountain situated in the Annapurna mountain range of Gandaki Province, north-central Nepal. It is the tenth highest mountain in the world"
   },
   {
-    source: "./imgs/river-11.jpg",
-    captionHeading: "Beautiful river",
-    subCaption: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta ipsum consectetur! Eaque itaque odio ex enim minima accusantium dolorem magnam."
+    source: "./imgs/marshyangdi.jpg",
+    captionHeading: "Marshyangdi Safari",
+    subCaption: "Marshyangdi is the main river of Nepal. Being a mountain river, it offers mesmerizing views of the mountains. Being the best white water river, it will give you the most exhilarating experience of water sports like rafting and kayaking."
   },
   {
-    source: "./imgs/river-22.jpg",
-    captionHeading: "Wonderful river",
-    subCaption: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta ipsum consectetur! Eaque itaque odio ex enim minima accusantium dolorem magnam."
+    source: "./imgs/langtang.jpg",
+    captionHeading: "Langtang valley",
+    subCaption: "Langtang valley is a Himalayan valley in the mountains of north-central Nepal, known for its trekking routes and natural environment."
   },
   {
-    source: "./imgs/house-11.jpg",
-    captionHeading: "Beautiful house",
-    subCaption: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta ipsum consectetur! Eaque itaque odio ex enim minima accusantium dolorem magnam."
+    source: "./imgs/manang.jpg",
+    captionHeading: "Soothing Manang",
+    subCaption: "Manang district is located at an elevation of 3519 m above sea level. The magnificent fusion of numerous mountain peaks, glaciers, passes, valleys and human settlement make it a wonderful place."
   },
 ];
 const galleryImgs = Array.from(travelGallery.children);
