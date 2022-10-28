@@ -1,0 +1,160 @@
+/* media queries*/
+@media (max-width: 1150px) {
+  .footer {
+    display: grid;
+    grid-template: repeat(3, max-content) / repeat(1, 1fr);
+    place-items: center;
+  }
+  .vertical-line {
+    border-top: 1px solid #797979;
+    border-right: none;
+    height: 0;
+    width: 60%;
+    margin: 2rem 0;
+  }
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+}
+@media (max-width: 1075px) {
+  .featured-tours-inner {
+    grid-template: repeat(2, max-content) / repeat(3, 250px);
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    border-bottom: 2px solid #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+  }
+  .ham-burger {
+    display: block;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+  .dot{
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .featured-tours-inner {
+    grid-template: repeat(2, max-content) / repeat(2, 300px);
+  }
+  .vertical-line {
+    width: 80%;
+  }
+}
+@media (max-width: 690px) {
+  .image-slider{
+    height: 60vh;
+  }
+  .about-inner{
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+  }
+  .featured-tours-inner {
+    grid-template: repeat(2, max-content) / repeat(2, 250px);
+  }
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (max-width: 555px) {
+  .image-slider{
+    height: 50vh;
+  }
+  .featured-tours-inner {
+    grid-template: repeat(4, max-content) / repeat(1, 300px);
+  }
+  .vertical-line {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .caption-heading{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .contact-inner,
+.refer-inner,
+.subscription-inner {
+  margin: 1rem 0;
+}
+}
+@media (max-width: 400px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 370px) {
+  .about-img{
+    height: 200px;
+  }
+  .footer {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 340px) {
+  .header {
+    padding: 1rem;
+  }
+  .caption{
+    width: 60vw;
+  }
+  .sub-title-lg {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .featured-tours-inner {
+    grid-template: repeat(4, max-content) / repeat(1, 1fr);
+  }
+  iframe {
+    width: 200px;
+    height: 150px;
+  }
+  .sub-title-sm {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 300px) {
+  .header {
+    padding: 1rem 0.5rem;
+  }
+  .header h1,
+  #ham {
+    font-size: 1.1rem;
+  }
+  .caption-heading{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .sub-caption{
+    font-size: .8rem;
+  }
+  input,
+select{
+  width: 100%;
+}
+}
+@media (min-width: 851px) {
+  .ham-burger {
+    display: none;
+  }
+  .mobile-nav-bar {
+    display: none;
+  }
+}
