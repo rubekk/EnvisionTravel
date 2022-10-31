@@ -11,6 +11,7 @@ const subCaption = document.querySelector(".sub-caption");
 const sliderDots=document.querySelectorAll(".dot");
 const travelGallery = document.querySelector(".travel-gallery-inner");
 const travelCaption = document.querySelector(".travel-caption");
+const topBtn = document.querySelector(".top-btn");
 
 // variables
 let currImg = 0;
@@ -103,5 +104,7 @@ sliderDots.forEach((dot,index)=>{
     changeSliderImg(index)
   })
 })
-
-
+window.addEventListener("scroll",()=>{
+  if(window.scrollY<=550) topBtn.style.display="none";
+  else topBtn.style.display="block";
+})

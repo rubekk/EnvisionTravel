@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -17,20 +17,22 @@ button {
   padding: 0.5rem 1.55rem;
   border: none;
   border-radius: 3px;
-  background-color: #009100;
-  font-family: Poppins, 'sans-serif';
-  letter-spacing: .1rem;
+  /* background-color: #009100; */
+  background-image: url("./imgs/green-texture.png");
+  font-family: Poppins, "sans-serif";
+  letter-spacing: 0.1rem;
   color: #fff;
   outline: none;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   border: 1px solid #009100;
 }
-button:hover{
+button:hover {
   background-color: #fff;
   color: #009100;
+  background-image: none;
 }
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
@@ -42,13 +44,16 @@ a{
   justify-content: space-between;
   align-items: center;
 }
-.header h1 span{
+.header h1 span {
   color: #009100;
 }
 .ham-burger {
   font-size: 1.25rem;
   display: none;
   cursor: pointer;
+}
+#ham{
+  color: #fff;
 }
 /* header section ends */
 
@@ -80,13 +85,16 @@ a{
 .nav-bar li:last-child {
   border-right: none;
 }
-.nav-bar li a{
-  transition: .3s;
+.nav-bar li a {
+  transition: 0.3s;
 }
-.nav-bar li button:hover a, .mobile-nav-bar li button:hover a{
+.nav-bar li button:hover a,
+.mobile-nav-bar li button:hover a {
   color: #009100;
 }
-.nav-bar li:hover a, .mobile-nav-bar li:hover a, .nav{
+.nav-bar li:hover a,
+.mobile-nav-bar li:hover a,
+.nav {
   color: lime;
 }
 /* nav bar section ends */
@@ -121,13 +129,13 @@ a{
 .mobile-nav-bar li:hover {
   transform: scale(1.1);
 }
-li button{
+li button {
   border: none;
 }
-li button:hover{
+li button:hover {
   border: none;
 }
-.mobile-cross{
+.mobile-cross {
   position: absolute;
   top: 1.75rem;
   right: 2rem;
@@ -160,34 +168,34 @@ li button:hover{
   color: #fff;
   transform: rotate(5deg);
 }
-.caption-inner{
+.caption-inner {
   padding-left: 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: rotate(-5deg); 
+  transform: rotate(-5deg);
 }
-.caption-heading{
+.caption-heading {
   font-size: 2rem;
- line-height: 3rem;
+  line-height: 3rem;
 }
-.sub-caption{
-  font-size: .9rem;
-  color:#fff;
+.sub-caption {
+  font-size: 0.9rem;
+  color: #fff;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.dots{
+.dots {
   display: flex;
   position: absolute;
   bottom: 1rem;
   right: 2%;
 }
-.dot{
+.dot {
   margin: 0 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
@@ -195,35 +203,36 @@ li button:hover{
   border-radius: 50%;
   background-color: #797979;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.active-dot, .dot:hover{
+.active-dot,
+.dot:hover {
   background-color: #009100;
 }
 /* image slider section ends */
 
 /* about section */
-.about{
+.about {
   padding: 3rem 2rem 4.5rem;
   background: #f7fffb;
   border-bottom: 2px solid#e6e6e6;
 }
 .about-inner {
-  margin: 3.5rem auto 0;
+  margin: 2.5rem auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about-text{
+.about-text {
   max-width: 450px;
 }
-.about-main-text span{
+.about-main-text span {
   color: #009100;
 }
-.about-img{
+.about-img {
   height: 300px;
 }
-.about-img img{
+.about-img img {
   height: 100%;
 }
 /* about section ends */
@@ -231,11 +240,12 @@ li button:hover{
 /* featured tours section */
 .featured-tours {
   padding: 3rem 2rem 4.5rem;
-  background-color: #F5FFFA;
+  background-color: #f5fffa;
 }
-.sub-title-lg, .sub-title-sm {
+.sub-title-lg,
+.sub-title-sm {
   margin: auto;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   width: max-content;
   border-bottom: 2px solid #009100;
 }
@@ -259,11 +269,22 @@ li button:hover{
 }
 .card-img {
   width: 100%;
+  position: relative;
 }
-.ind-tours-card img {
+.card-thumbnail {
   width: 100%;
   padding: 5px;
   transition: 0.3s;
+}
+.star{
+  width: 30px;
+  position: absolute;
+  top: .5rem;
+  right: 0rem;
+}
+.star i{
+  color: orange;
+  cursor: pointer;
 }
 .ind-tours-card img:hover {
   filter: sepia(25%);
@@ -272,17 +293,17 @@ li button:hover{
 .card-text {
   padding: 0 9px 3rem;
 }
-.card-text i{
-  margin-right: .5rem;
+.card-text i {
+  margin-right: 0.5rem;
   font-size: 0.8rem;
 }
 .card-details {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   color: #797979;
   font-size: 0.8rem;
 }
-.card-details i{
-  margin-right: .75rem;
+.card-details i {
+  margin-right: 0.75rem;
 }
 .card-text button {
   float: right;
@@ -301,7 +322,7 @@ li button:hover{
 }
 .travel-gallery-outer {
   width: 90vw;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 3.5rem auto 0;
 }
 .travel-gallery-inner {
@@ -317,7 +338,7 @@ li button:hover{
   transition: 0.3s;
   object-fit: cover;
 }
-.travel-gallery img:nth-child(4){
+.travel-gallery img:nth-child(4) {
   width: 300px;
   height: 225px;
   border: 2px solid #000;
@@ -325,13 +346,18 @@ li button:hover{
 .travel-gallery img:hover {
   filter: sepia(50%);
 }
-.travel-img-caption{
+.travel-img-caption {
   width: max-content;
+  padding: .25rem .5rem;
   position: absolute;
   left: 50%;
   right: 50%;
-  bottom: 2.5rem;
+  bottom: 1.75rem;
   transform: translateX(-50%);
+  background-image: url("./imgs/green-texture.png");
+  background-position: center;
+  color: #fff;
+  border-radius: 2px;
 }
 /* travel gallery section ends */
 
@@ -365,8 +391,8 @@ li button:hover{
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.contact i{
-  margin-right: .5rem;
+.contact i {
+  margin-right: 0.5rem;
 }
 input,
 textarea,
@@ -400,13 +426,40 @@ textarea {
   border-right: 1px solid #b3b3b3;
   height: 310px;
 }
-.footer button{
+.footer button {
   width: 100%;
 }
-.map-view{
-  font-size: .8rem;
+.map-view {
+  font-size: 0.8rem;
   color: rgb(58, 120, 255);
   font-style: italic;
   text-decoration: underline;
 }
 /* footer section ends */
+
+/* top button */
+.top-btn{
+  padding: .5rem .75rem;
+  display: none;
+  position: fixed;
+  right: .5rem;
+  bottom: 1.5rem;
+  z-index: 1000;
+}
+.top-btn i{
+  font-size: 1.1rem;
+}
+
+/* styling scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(167, 253, 167);
+}
+::-webkit-scrollbar-thumb {
+  background: #009100;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #045e04;
+}

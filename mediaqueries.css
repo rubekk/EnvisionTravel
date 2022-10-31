@@ -29,7 +29,8 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
   }
   .ham-burger {
     display: block;
@@ -40,7 +41,7 @@
   .active {
     display: flex;
   }
-  .dot{
+  .dot {
     width: 1rem;
     height: 1rem;
   }
@@ -54,10 +55,10 @@
   }
 }
 @media (max-width: 690px) {
-  .image-slider{
+  .image-slider {
     height: 60vh;
   }
-  .about-inner{
+  .about-inner {
     flex-direction: column-reverse;
     row-gap: 2rem;
   }
@@ -70,7 +71,7 @@
   }
 }
 @media (max-width: 555px) {
-  .image-slider{
+  .image-slider {
     height: 50vh;
   }
   .featured-tours-inner {
@@ -84,15 +85,15 @@
   .header h1 {
     font-size: 1.5rem;
   }
-  .caption-heading{
+  .caption-heading {
     font-size: 1.5rem;
     line-height: 2rem;
   }
   .contact-inner,
-.refer-inner,
-.subscription-inner {
-  margin: 1rem 0;
-}
+  .refer-inner,
+  .subscription-inner {
+    margin: 1rem 0;
+  }
 }
 @media (max-width: 400px) {
   .footer {
@@ -100,7 +101,7 @@
   }
 }
 @media (max-width: 370px) {
-  .about-img{
+  .about-img {
     height: 200px;
   }
   .footer {
@@ -111,7 +112,7 @@
   .header {
     padding: 1rem;
   }
-  .caption{
+  .caption {
     width: 60vw;
   }
   .sub-title-lg {
@@ -138,17 +139,17 @@
   #ham {
     font-size: 1.1rem;
   }
-  .caption-heading{
+  .caption-heading {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
-  .sub-caption{
-    font-size: .8rem;
+  .sub-caption {
+    font-size: 0.8rem;
   }
   input,
-select{
-  width: 100%;
-}
+  select {
+    width: 100%;
+  }
 }
 @media (min-width: 851px) {
   .ham-burger {
