@@ -108,3 +108,6 @@ window.addEventListener("scroll",()=>{
   if(window.scrollY<=550) topBtn.style.display="none";
   else topBtn.style.display="block";
 })
+
+// credit
+console.log("Website created by Rubek!");

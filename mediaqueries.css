@@ -150,6 +150,13 @@
   select {
     width: 100%;
   }
+  .last{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .created-by{
+    margin-top: .25rem;
+  }
 }
 @media (min-width: 851px) {
   .ham-burger {

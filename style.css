@@ -1,3 +1,7 @@
+:root{
+  --primaryColor: #009100;
+  --primaryHoverColor: lime;
+}
 * {
   padding: 0;
   margin: 0;
@@ -25,11 +29,11 @@ button {
   outline: none;
   cursor: pointer;
   transition: 0.3s;
-  border: 1px solid #009100;
+  border: 1px solid var(--primaryColor);
 }
 button:hover {
   background-color: #fff;
-  color: #009100;
+  color: var(--primaryColor);
   background-image: none;
 }
 a {
@@ -45,7 +49,7 @@ a {
   align-items: center;
 }
 .header h1 span {
-  color: #009100;
+  color: var(--primaryColor);
 }
 .ham-burger {
   font-size: 1.25rem;
@@ -69,8 +73,8 @@ a {
   align-items: center;
   background-color: rgb(31, 31, 31);
   color: #fff;
-  border-top: 2px solid #009100;
-  border-bottom: 2px solid #009100;
+  border-top: 2px solid var(--primaryColor);
+  border-bottom: 2px solid var(--primaryColor);
   z-index: 2;
 }
 .nav-bar li {
@@ -79,7 +83,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #009100;
+  border-right: 1px solid var(--primaryColor);
   cursor: pointer;
 }
 .nav-bar li:last-child {
@@ -89,13 +93,14 @@ a {
   transition: 0.3s;
 }
 .nav-bar li button:hover a,
-.mobile-nav-bar li button:hover a {
-  color: #009100;
+.mobile-nav-bar li button:hover a,
+.card-text button:hover a {
+  color: var(--primaryColor);
 }
 .nav-bar li:hover a,
 .mobile-nav-bar li:hover a,
 .nav {
-  color: lime;
+  color: var(--primaryHoverColor);
 }
 /* nav bar section ends */
 
@@ -207,7 +212,7 @@ li button:hover {
 }
 .active-dot,
 .dot:hover {
-  background-color: #009100;
+  background-color: var(--primaryColor);
 }
 /* image slider section ends */
 
@@ -247,7 +252,7 @@ li button:hover {
   margin: auto;
   padding-bottom: 0.25rem;
   width: max-content;
-  border-bottom: 2px solid #009100;
+  border-bottom: 2px solid var(--primaryColor);
 }
 .center-cards {
   display: flex;
@@ -437,6 +442,28 @@ textarea {
 }
 /* footer section ends */
 
+/* social medias and created by section */
+.last{
+  padding: 0.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+.social-medias i{
+  margin: 0 .25rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.created-by{
+  font-size: .9rem;
+}
+.created-by i{
+  text-decoration: underline;
+}
+/* social medias and created by section ends */
+
 /* top button */
 .top-btn{
   padding: .5rem .75rem;
@@ -458,7 +485,7 @@ textarea {
   background: rgb(167, 253, 167);
 }
 ::-webkit-scrollbar-thumb {
-  background: #009100;
+  background: var(--primaryColor);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #045e04;
