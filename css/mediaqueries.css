@@ -32,6 +32,9 @@
     background-color: #000;
     color: #fff;
   }
+  .color {
+    border: 2px solid #dcdcdc;
+  }
   .ham-burger {
     display: block;
   }
@@ -71,6 +74,10 @@
   }
 }
 @media (max-width: 555px) {
+  .color {
+    height: 17px;
+    width: 17px;
+  }
   .image-slider {
     height: 50vh;
   }
@@ -96,6 +103,12 @@
   }
 }
 @media (max-width: 400px) {
+  .header-left {
+    column-gap: 0.75rem;
+  }
+  .color {
+    margin: 0 0.1rem;
+  }
   .footer {
     padding: 2rem 1rem;
   }
@@ -139,6 +152,10 @@
   #ham {
     font-size: 1.1rem;
   }
+  .color {
+    height: 15px;
+    width: 15px;
+  }
   .caption-heading {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -150,15 +167,15 @@
   select {
     width: 100%;
   }
-  .last{
+  .last {
     flex-direction: column;
     justify-content: center;
   }
-  .created-by{
-    margin-top: .25rem;
+  .created-by {
+    margin-top: 0.25rem;
   }
 }
-@media (min-width: 851px) {
+@media (min-width: 850px) {
   .ham-burger {
     display: none;
   }

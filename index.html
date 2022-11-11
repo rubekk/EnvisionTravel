@@ -20,16 +20,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link type="text/css" rel="stylesheet" href="mediaqueries.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./css/mediaqueries.css" />
   </head>
   <body>
     <!-- header section-->
     <div id="top"></div>
     <div class="header">
       <h1>Envision<span>Travel</span></h1>
-      <div class="ham-burger">
-        <i id="ham" class="fa-solid fa-bars"></i>
+      <div class="header-left">
+        <div class="colors">
+          <div class="color"></div>
+          <div class="color"></div>
+          <div class="color"></div>
+        </div>  
+        <div class="ham-burger">
+          <i id="ham" class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </div>
     <!-- header section ends -->
@@ -111,6 +118,7 @@
     </div>
     <!-- image slider section ends -->
 
+    <!-- about section -->
     <div id="about" class="about">
       <h2 class="sub-title-lg">About</h2>
       <div class="about-inner">
@@ -128,6 +136,7 @@
         </div>
       </div>
     </div>
+    <!-- about section ends -->
 
     <!-- featured tours section -->
     <div id="tour-package" class="featured-tours">
@@ -270,8 +279,14 @@
           />
         </div>
       </div>
-      <div class="travel-img-caption">
-        <p class="travel-caption">Manang</p>
+      <div class="travel-bottom">
+        <!-- <span class="left-btn">L</span> -->
+        <i id="left-btn" class="fa-solid fa-chevron-left"></i>
+        <div class="travel-img-caption">
+          <p class="travel-caption">Manang</p>
+        </div>
+        <!-- <span class="right-btn">R</span> -->
+        <i id="right-btn" class="fa-solid fa-chevron-right"></i>
       </div>
     </div>
     <!-- travel gallery section ends -->
@@ -406,6 +421,7 @@
     </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script> 
+    <script src="./js/script.js"></script> 
+    <script src="./js/changeColor.js"></script>
   </body>
 </html>

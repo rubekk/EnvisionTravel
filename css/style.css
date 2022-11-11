@@ -1,6 +1,9 @@
-:root{
+:root {
   --primaryColor: #009100;
   --primaryHoverColor: lime;
+  --scrollLight: rgb(167, 253, 167);
+  --scrollThumbHover: #045e04;
+  --bgImg: url("./../imgs/green-texture.png");
 }
 * {
   padding: 0;
@@ -12,7 +15,7 @@ html {
 }
 body {
   background-color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", monospace, sans-serif;
 }
 li {
   list-style: none;
@@ -21,8 +24,7 @@ button {
   padding: 0.5rem 1.55rem;
   border: none;
   border-radius: 3px;
-  /* background-color: #009100; */
-  background-image: url("./imgs/green-texture.png");
+  background-image: var(--bgImg);
   font-family: Poppins, "sans-serif";
   letter-spacing: 0.1rem;
   color: #fff;
@@ -51,12 +53,42 @@ a {
 .header h1 span {
   color: var(--primaryColor);
 }
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.colors {
+  display: flex;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  transition: 0.1s;
+  cursor: pointer;
+}
+.color:hover {
+  transform: scale(1.1);
+}
+.color:nth-child(1) {
+  background-color: lime;
+}
+.color:nth-child(2) {
+  background-color: rgb(0, 255, 213);
+}
+.color:nth-child(3) {
+  background-color: rgb(255, 0, 34);
+}
 .ham-burger {
   font-size: 1.25rem;
   display: none;
   cursor: pointer;
 }
-#ham{
+#ham {
   color: #fff;
 }
 /* header section ends */
@@ -232,7 +264,7 @@ li button:hover {
   max-width: 450px;
 }
 .about-main-text span {
-  color: #009100;
+  color: var(--primaryColor);
 }
 .about-img {
   height: 300px;
@@ -281,13 +313,13 @@ li button:hover {
   padding: 5px;
   transition: 0.3s;
 }
-.star{
+.star {
   width: 30px;
   position: absolute;
-  top: .5rem;
+  top: 0.5rem;
   right: 0rem;
 }
-.star i{
+.star i {
   color: orange;
   cursor: pointer;
 }
@@ -347,23 +379,40 @@ li button:hover {
   width: 300px;
   height: 225px;
   border: 2px solid #000;
+  box-shadow: 2px 2px 10px 10px rgb(46 128 187 / 20%);
 }
 .travel-gallery img:hover {
   filter: sepia(50%);
 }
-.travel-img-caption {
+.travel-bottom {
   width: max-content;
-  padding: .25rem .5rem;
   position: absolute;
   left: 50%;
   right: 50%;
   bottom: 1.75rem;
   transform: translateX(-50%);
-  background-image: url("./imgs/green-texture.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.travel-img-caption {
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  background-image: var(--bgImg);
   background-position: center;
   color: #fff;
   border-radius: 2px;
 }
+.travel-bottom i {
+  margin: 0 0.75rem;
+  color: #797979;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.travel-bottom i:hover {
+  color: #000;
+}
+
 /* travel gallery section ends */
 
 /* footer */
@@ -443,7 +492,7 @@ textarea {
 /* footer section ends */
 
 /* social medias and created by section */
-.last{
+.last {
   padding: 0.25rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -451,29 +500,29 @@ textarea {
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
 }
-.social-medias i{
-  margin: 0 .25rem;
+.social-medias i {
+  margin: 0 0.25rem;
   font-size: 1.1rem;
   cursor: pointer;
 }
-.created-by{
-  font-size: .9rem;
+.created-by {
+  font-size: 0.9rem;
 }
-.created-by i{
+.created-by i {
   text-decoration: underline;
 }
 /* social medias and created by section ends */
 
 /* top button */
-.top-btn{
-  padding: .5rem .75rem;
+.top-btn {
+  padding: 0.5rem 0.75rem;
   display: none;
   position: fixed;
-  right: .5rem;
+  right: 0.5rem;
   bottom: 1.5rem;
   z-index: 1000;
 }
-.top-btn i{
+.top-btn i {
   font-size: 1.1rem;
 }
 
@@ -482,11 +531,11 @@ textarea {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: rgb(167, 253, 167);
+  background: var(--scrollLight);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--primaryColor);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #045e04;
+  background: var(--scrollThumbHover);
 }
