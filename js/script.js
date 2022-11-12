@@ -20,25 +20,25 @@ let currImg = 0;
 let galleryIndex = 0;
 const imgData = [
   {
-    source: "./../imgs/annapurna.jpg",
+    source: "./imgs/annapurna.jpg",
     captionHeading: "Annapurna Base Camp",
     subCaption:
       "Annapurna is a mountain situated in the Annapurna mountain range of Gandaki Province, north-central Nepal. It is the tenth highest mountain in the world.",
   },
   {
-    source: "./../imgs/marshyangdi.jpg",
+    source: "./imgs/marshyangdi.jpg",
     captionHeading: "Marshyangdi Safari",
     subCaption:
       "Marshyangdi is the main river of Nepal. Being a mountain river, it offers mesmerizing views of the mountains. Being the best white water river, it will give you the most exhilarating experience of water sports like rafting and kayaking.",
   },
   {
-    source: "./../imgs/langtang.jpg",
+    source: "./imgs/langtang.jpg",
     captionHeading: "Langtang valley",
     subCaption:
       "Langtang valley is a Himalayan valley in the mountains of north-central Nepal, known for its trekking routes and natural environment.",
   },
   {
-    source: "./../imgs/manang.jpg",
+    source: "./imgs/manang.jpg",
     captionHeading: "Soothing Manang",
     subCaption:
       "Manang district is located at an elevation of 3519 m above sea level. The magnificent fusion of numerous mountain peaks, glaciers, passes, valleys and human settlement make it a wonderful place.",
@@ -100,11 +100,11 @@ setInterval(() => {
 // event listeners
 hamBurger.addEventListener("click", () => {
   mobileNav.className = "mobile-nav-bar active";
-  topBtn.style.zIndex=-5;
+  topBtn.style.zIndex = -5;
 });
 mobileCross.addEventListener("click", () => {
   mobileNav.className = "mobile-nav-bar";
-  topBtn.style.zIndex=1000;
+  topBtn.style.zIndex = 1000;
 });
 Array.from(mobileNav.children).forEach((child) => {
   child.addEventListener("click", () => {

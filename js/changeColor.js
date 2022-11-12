@@ -26,12 +26,25 @@ const colors = [
   },
 ];
 
+// local storage
+let colorIndex = localStorage.getItem("colorIndex")
+  ? localStorage.getItem("colorIndex")
+  : 0;
+
+// function
+const switchWebColors = (index) => {
+  cssRoot.style.setProperty("--primaryColor", colors[index].dark);
+  cssRoot.style.setProperty("--primaryHoverColor", colors[index].light);
+  cssRoot.style.setProperty("--scrollThumbHover", colors[index].scrollHover);
+  cssRoot.style.setProperty("--scrollLight", colors[index].scrollLight);
+  cssRoot.style.setProperty("--bgImg", `url("${colors[index].bgImg}")`);
+};
+switchWebColors(colorIndex);
+
+// event listener
 colorElems.forEach((elem, index) => {
   elem.addEventListener("click", () => {
-    cssRoot.style.setProperty("--primaryColor", colors[index].dark);
-    cssRoot.style.setProperty("--primaryHoverColor", colors[index].light);
-    cssRoot.style.setProperty("--scrollThumbHover", colors[index].scrollHover);
-    cssRoot.style.setProperty("--scrollLight", colors[index].scrollLight);
-    cssRoot.style.setProperty("--bgImg", `url("${colors[index].bgImg}")`);
+    localStorage.setItem("colorIndex", index);
+    switchWebColors(index);
   });
 });
