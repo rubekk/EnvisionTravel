@@ -1,6 +1,3 @@
-// initializing animate on scroll
-AOS.init();
-
 // query selectors
 const hamBurger = document.querySelector("#ham");
 const mobileNav = document.querySelector(".mobile-nav-bar");
